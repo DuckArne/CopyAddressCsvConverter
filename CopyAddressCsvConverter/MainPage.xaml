@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="CopyAddressCsvConverter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CopyAddressCsvConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock x:Name="titelTextblock" HorizontalAlignment="Center" Margin="0,50,0,0" Text="Copyaddress csv fils konverterare" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" SelectionChanged="TextBlock_SelectionChanged"/>
+        <Button x:Name="valjfilButton" Content="Välj fil" Margin="0,30"  HorizontalAlignment="Center" Width="350" Click="VäljfilButton_Click"/>
+        <TextBlock x:Name="valdFilTextblock" Text="ingen vald fil" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="25" SelectionChanged="ValdFilTextblock_SelectionChanged"/>
+        <Button x:Name="konverteraButton" Content="Konvertera vald fil" Width="400" Background="Azure" Height="50" Margin="0,50,0,0" HorizontalAlignment="Center" Click="KonverteraButton_Click"/>
+    </StackPanel>
+       
+
+    
+</Page>
